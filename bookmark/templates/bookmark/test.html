@@ -38,6 +38,7 @@
         </tbody>
     </table>
 
+    {% block pagination %}
         {% if is_paginated %}
             <ul class="pagination justify-content-center pagination-sm">
                 {% if page_obj.has_previous %}
@@ -67,6 +68,7 @@
                 {% endif %}
             </ul>
         {% endif %}
+    {% endblock %}
 {% endblock %}
 </body>
 </html>
